@@ -63,7 +63,7 @@ public final class UserConsole {
 			System.out.print(msg);
 			try {
 				input = userIn.next();
-				System.out.println(input);
+				
 				if (!Pattern.matches(REGEX, input)) {
 					throw new Exception(" Please enter Alphabets only");
 				}
@@ -98,7 +98,7 @@ public final class UserConsole {
 			try {
 				System.out.print(PLEASE_TYPE_DEPARTMENT_ID);
 				deptId = userIn.next();
-				System.out.println(deptId);
+				
 				if (!Pattern.matches(ALPHABETS, deptId)) {
 					throw new Exception(" Please enter Alphabets only");
 				}
